@@ -5,7 +5,7 @@ headTitle.textContent = "Fruits & Vegetables Corp";
 
 // The last a tag in header ul has wrong text content and href attribute (should be Vegetables and not Bananas) --------------- OK
 let aTag = document.createElement('a');
-aTag.setAttribute('href',"yourlink.html");
+aTag.setAttribute('href',"#vegetables");
 aTag.innerHTML = "Vegetables";
 
 let veggies = document.querySelectorAll("li");
@@ -38,8 +38,8 @@ contact.insertBefore(h2Contact, contact.querySelector("p"));
 let pTag = document.createElement('p');
 about.appendChild(pTag);
 pTag.textContent = ("We're the best in fruits & vegetables");
-debugger;
-// The developer used td elements in thead instead of th. Fix it. --------------- OK 
+
+// The developer used td elements in thead instead of th. Fix it. --------------- OK
 let replace = document.querySelectorAll("thead td");
 for (let td of replace) {
   let thText = document.createElement("th");
